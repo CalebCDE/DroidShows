@@ -6,14 +6,15 @@
 <string name="layout_search_no_items">No se encontró ninguna serie.</string>
 <string name="layout_seasons_no_items">No hay temporadas que mostrar.</string>
 <string name="archive">Mover al Archivo</string>
-<string name="addserie_hint">Nombre de la serie</string>
+<string name="addserie_hint">Nombre de la serie…</string>
 <string name="search_hint">Buscar…</string>
+<string name="menu_filter">Filtro</string>
 <string name="menu_undo">Deshacer</string>
 <string name="menu_add_serie">Añade una serie</string>
 <string name="menu_update">Actualiza las series</string>
-<string name="menu_search">Busca series</string>
-<string name="menu_sort_az">Ordenar por nombre</string>
-<string name="menu_sort_last_unseen">Ordenar por no visto</string>
+<string name="menu_search">Busca</string>
+<string name="menu_sort_by_name">Ordenar por nombre</string>
+<string name="menu_sort_by_unseen">Ordenar por no visto</string>
 <string name="menu_about">Opciones</string>
 <string name="menu_exit">Salir</string>
 <string name="menu_context_update">Actualizar</string>
@@ -24,13 +25,17 @@
 <string name="menu_show_current">Muestra las series actuales</string>
 <string name="menu_exclude_seen">Ocultar las completadas</string>
 <string name="menu_include_seen">Mostrar las completadas</string>
+<string name="menu_log">Historial</string>
+<string name="menu_close_log">Cerrar historial</string>
 <string name="menu_context_view_serie_details">Detalles de la serie</string>
 <string name="menu_context_view_wiki">Detalles en Wikipedia</string>
 <string name="menu_context_view_imdb">Detalles en IMDb</string>
 <string name="menu_context_view_ep_imdb">Próximo episodio en IMDb</string>
 <string name="menu_context_ext_resources">Recursos externos</string>
 <string name="menu_context_mark_next_episode_as_seen">Marcar el siguiente ep. como visto</string>
-<string name="dialog_OK">OK</string>
+<string name="menu_context_pin">Anclar</string>
+<string name="menu_context_unpin">Soltar</string>
+<string name="dialog_ok">OK</string>
 <string name="dialog_auto_backup">Copia de seguridad diaria automática</string>
 <string name="dialog_backup">Copia de seguridad</string>
 <string name="dialog_backup_done">La copia de seguridad de la base de datos ha sido completada</string>
@@ -44,17 +49,34 @@
 <string name="dialog_restore_notfound">¡No se ha podido encontrar la copia de seguridad en el almacenamiento externo!</string>
 <string name="dialog_title_delete">¿Quieres eliminar la serie?</string>
 <string name="dialog_delete">¿Seguro que quieres borrar %s?</string>
-<string name="dialog_Cancel">Cancelar</string>
+<string name="dialog_cancel">Cancelar</string>
 <string name="dialog_search">Texto buscado:</string>
 <string name="dialog_update_series">¿Quieres actualizar las series ahora mismo?</string>
-<string name="dialog_update_speedup">Puedes acelerar este proceso con la opción en Menú &gt; Opciones.</string>
-<string name="dialog_last_season">Actualiza sólo la última temporada de las series</string>
+<string name="dialog_update_speedup">Puedes acelerar este proceso con la opción en Menú > Opciones.</string>
+<string name="dialog_latest_season">Actualiza sólo la última temporada de las series</string>
 <string name="dialog_include_specials">Cuenta los especiales como episodios no vistos</string>
 <string name="dialog_full_line_check">Toca en toda la línea para marcar un ep.</string>
 <string name="dialog_switch_swipe_direction">Retrocede deslizando de derecha a izquierda</string>
 <string name="dialog_show_next_airing">Muestra la próxima emisión en lugar del próximo episodio</string>
-<string name="dialog_help">» No olvides actualizar las series de forma regular \n» Deja pulsado los elementos ver para más opciones \n» Desliza de izquierda a derecha para retroceder. \n\nEn la Lista de series: \n» Toca el póster para ver la información del próximo episodio \n» Haz doble toque para recurso externo (a *[url]s directamente, o lista) \n» Deja pulsado el póster para mostrar la información de la serie \n» Desliza de derecha a izquierda para marcar el siguiente como visto \n\nDetalles de la serie: \n» Toca el póster para verlo a pantalla completa \n» Toca el póster a pantalla completa para ver un art fan \n» Deja pulsado el póster a pantalla completa para abrirlo con otra app \n\nDetalles de la serie/episodio: \n» Toca la puntuación de IMDb para verla en IMDb</string>
-<string name="menu_archive">Archivar</string>
+<string name="dialog_help">» No olvides actualizar las series de forma regular \n
+   » Deja pulsado los elementos ver para más opciones \n
+   » Desliza de izquierda a derecha para retroceder. \n
+   \n
+   En la Lista de series: \n
+   » Toca el póster para ver la información del próximo episodio \n
+   » Haz doble toque para recurso externo (a *[url]s directamente, o lista) \n
+   » Deja pulsado el póster para mostrar la información de la serie \n
+   » Desliza de derecha a izquierda para marcar el siguiente como visto \n
+   \n
+   Detalles de la serie: \n
+   » Toca el póster para verlo a pantalla completa \n
+   » Toca el póster a pantalla completa para ver un art fan \n
+   » Deja pulsado el póster a pantalla completa para abrirlo con otra app \n
+   \n
+   Detalles de la serie/episodio: \n
+   » Toca la puntuación de IMDb para verla en IMDb</string>
+<string name="dialog_networks">Cadenas</string>
+<string name="menu_archive">Archivadas</string>
 <string name="menu_unarchive">Recuperar</string>
 <string name="messages_title_updating_series">Actualizando las series</string>
 <string name="messages_title_updating_db">Actualizando base de datos</string>
@@ -63,8 +85,8 @@
 <string name="messages_title_update_series">Actualiza todas las series</string>
 <string name="messages_update_series">Obteniendo la información de las series. Esta operación puede tardar un poco…</string>
 <string name="messages_episodes">episodios</string>
-<string name="messages_new_episodes">nuevos episodios</string>
-<string name="messages_new_episode">nuevo episodio</string>
+<string name="messages_new_episodes">nuevos eps.</string>
+<string name="messages_new_episode">nuevo ep.</string>
 <string name="messages_ep_aired">emitido(s)</string>
 <string name="messages_to_be_aired">por emitir</string>
 <string name="messages_seasons">Temporadas</string>
